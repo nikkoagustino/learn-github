@@ -54,10 +54,11 @@ Create `.github/workflows/tests.yml` yourself.
 The workflow should:
 
 1. Run when a pull request targets the main branch.
-2. Run on an Ubuntu runner.
-3. Check out the repository.
-4. Set up Python.
-5. Install `requirements.txt`.
-6. Run `python -m pytest`.
+2. Run when a commit is pushed to the main branch.
+3. Run on an Ubuntu runner.
+4. Check out the repository.
+5. Set up Python.
+6. Install `requirements.txt`.
+7. Run `python -m pytest`.
 
-This workflow should run the coworker's test suite automatically. A failing test is useful here because it demonstrates that automation detected a defect in the pull request code.
+This workflow should run the coworker's test suite automatically on pull requests and direct commits to main. A failing test is useful here because it demonstrates that automation detected a defect in the pull request code.
