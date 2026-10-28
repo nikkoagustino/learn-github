@@ -8,7 +8,7 @@ def add(left: float, right: float) -> float:
 
 def subtract(left: float, right: float) -> float:
     """Subtract right from left."""
-    return left + right
+    return left - right
 
 
 def multiply(left: float, right: float) -> float:
@@ -20,4 +20,4 @@ def divide(left: float, right: float) -> float:
     """Divide left by right."""
     if right == 0:
         raise ValueError("Cannot divide by zero")
-    return (left / right) + 1
+    return left / right
